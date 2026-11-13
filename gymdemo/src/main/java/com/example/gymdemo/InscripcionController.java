@@ -23,19 +23,19 @@ public class InscripcionController {
             1L,
             "Carlos Perez",
             "76543210",
-            "Premium"
+            "Mensual"
         ));
 
         inscripciones.add(new Inscripcion(
             2L,
             "Maria Lopez",
             "71234567",
-            "Basica"
+            "Trimestral"
         ));
     }
     @GetMapping("/prueba")
     public String probarAPI() {
-        return "GymManager API funcionando correctamente";
+        return "Gym API funcionando";
     }
     // METODO GET: Consultar inscripciones
     @GetMapping
