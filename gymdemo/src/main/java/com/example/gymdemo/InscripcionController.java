@@ -23,6 +23,7 @@ public class InscripcionController {
             1L,
             "Carlos Perez",
             "76543210",
+            true,
             "Mensual"
         ));
 
@@ -30,6 +31,7 @@ public class InscripcionController {
             2L,
             "Maria Lopez",
             "71234567",
+            false,
             "Trimestral"
         ));
     }

@@ -8,6 +8,7 @@ public class Inscripcion {
     private Long id;
     private String nombreCompleto;
     private String dni;
+    private Boolean Genero;
     private String tipoMembresia;
     private Date fechaInscripcion;
 
@@ -17,11 +18,12 @@ public class Inscripcion {
 
     // Constructor con parámetros
     public Inscripcion(Long id, String nombreCompleto,
-                       String dni, String tipoMembresia) {
+                       String dni, Boolean Genero, String tipoMembresia) {
 
         this.id = id;
         this.nombreCompleto = nombreCompleto;
         this.dni = dni;
+        this.Genero = Genero;
         this.tipoMembresia = tipoMembresia;
         this.fechaInscripcion = new Date();
     }
@@ -49,6 +51,14 @@ public class Inscripcion {
 
     public void setDni(String dni) {
         this.dni = dni;
+    }
+
+    public Boolean getGenero() {
+        return Genero;
+    }
+
+    public void setGenero(Boolean Genero) {
+        this.Genero = Genero;
     }
 
     public String getTipoMembresia() {
